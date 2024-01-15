@@ -1,0 +1,61 @@
+/* About */
+.aboutContainer {
+    padding: 2rem 0;
+  }
+  
+  .aboutContainer h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .aboutContainer .flexAbout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 2rem;
+  }
+  
+  .aboutContainer .flexAbout .aboutText {
+    width: 50%;
+  }
+  
+  .aboutContainer .flexAbout .aboutText p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  
+  .aboutContainer .flexAbout .aboutImg {
+    width: 50%;
+  }
+  
+  .aboutContainer .flexAbout .aboutImg .profileImg {
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border: 2px solid #DADADB;
+    filter: grayscale(100%);
+    transition: all 0.5s ease-in-out;
+    cursor: cell;
+  }
+  
+  .aboutContainer .flexAbout .aboutImg .profileImg:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .aboutContainer .flexAbout {
+      flex-direction: column;
+    }
+  
+    .aboutContainer .flexAbout .aboutText {
+      width: 100%;
+    }
+  
+    .aboutContainer .flexAbout .aboutImg {
+      width: 100%;
+    }
+  }
